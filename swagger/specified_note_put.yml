@@ -1,0 +1,21 @@
+Endpoint for editing a note by its id.
+---
+parameters:
+  - name: id
+    in: path
+    type: int
+    required: true
+  - name: title
+    in: body
+    type: string
+    required: false
+  - name: content
+    in: body
+    type: string
+    required: false
+
+responses:
+  200:
+    description: An edited note with the specified id.
+  400:
+    description: A message "Specified note id not found.".

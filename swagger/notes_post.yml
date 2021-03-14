@@ -1,0 +1,15 @@
+Endpoint adding a new note to the database.
+---
+parameters:
+  - name: title
+    in: body
+    type: string
+    required: false
+  - name: content
+    in: body
+    type: string
+    required: true
+
+responses:
+  200:
+    description: A new added note including id.

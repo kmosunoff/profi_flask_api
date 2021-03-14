@@ -1,0 +1,10 @@
+Endpoint returning a list of notes from database.
+---
+parameters:
+  - name: query
+    in: body
+    type: string
+    required: false
+responses:
+  200:
+    description: A list of notes (may be filtered by the query parameter).

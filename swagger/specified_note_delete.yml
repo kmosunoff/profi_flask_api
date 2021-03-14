@@ -1,0 +1,12 @@
+Endpoint deleting a note by its id.
+---
+parameters:
+  - name: id
+    in: path
+    type: int
+    required: true
+responses:
+  200:
+    description: A message "Specified note deleted.".
+  400:
+    description: A message "Specified note id not found.".
